@@ -150,7 +150,7 @@ def uniform_distr_graphics(
     # plt.show()
 
 
-def lab1():
+def histograms():
     sample = (10, 50, 1000)
     normal_distr_graphics(sizes=sample)
     cauchy_distr_graphics(sizes=sample)
@@ -160,4 +160,4 @@ def lab1():
 
 
 if __name__ == "__main__":
-    lab1()
+    histograms()
