@@ -1,3 +1,4 @@
+from pathlib import Path
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -11,6 +12,7 @@ def boxplot(data, title):
     ax.set(xlabel="x", ylabel="n")
     ax.set(yticklabels=nums)
     ax.set_title(title)
+    plt.savefig(Path(f"lab1-4/images/boxplots/{title}.png"))
     plt.show()
 
 

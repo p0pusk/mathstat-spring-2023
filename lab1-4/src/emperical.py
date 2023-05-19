@@ -1,3 +1,4 @@
+from pathlib import Path
 import numpy as np
 import scipy.stats as sps
 import seaborn as sns
@@ -16,6 +17,7 @@ def edf(data, cdf, x, title):
         # axes[i].set_xlabel("Плотность")
         axes[i].plot(x, y2)
         axes[i].set_title(f"n = {len(inf)}")
+    plt.savefig(Path(f"lab1-4/images/edf/{title}.png"))
     plt.show()
 
 
@@ -31,6 +33,7 @@ def kde(data, pdf, x, title):
         ax[i].set_ylabel("Плотность")
         ax[i].legend()
         ax[i].set_title(f"h={str(scale)}*$h_n$")
+    plt.savefig(Path(f"lab1-4/images/kde/{title}_{len(data)}.png"))
     plt.show()
 
 

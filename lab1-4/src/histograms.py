@@ -30,7 +30,7 @@ def normal_distr_graphics(
         plt.title(f"\nРазмер выборки: {sizes[i]}", fontsize=10)
 
     plt.legend(fontsize=10, loc=1)
-    plt.savefig(Path("images/normal.png"))
+    plt.savefig(Path("lab1-4/images/histogram/normal.png"))
     # plt.show()
 
 
@@ -60,7 +60,7 @@ def cauchy_distr_graphics(
         plt.title(f"\nРазмер выборки: {sizes[i]}", fontsize=10)
 
     plt.legend(fontsize=10, loc=1)
-    plt.savefig(Path("images/cauchy.png"))
+    plt.savefig(Path("lab1-4/images/histogram/cauchy.png"))
     # plt.show()
 
 
@@ -89,7 +89,7 @@ def laplace_distr_graphics(
         plt.title(f"\nРазмер выборки: {sizes[i]}", fontsize=10)
 
     plt.legend(fontsize=10, loc=1)
-    plt.savefig(Path("images/laplace.png"))
+    plt.savefig(Path("lab1-4/images/histogram/laplace.png"))
     # plt.show()
 
 
@@ -115,7 +115,7 @@ def poisson_distr_graphics(
         plt.title(f"\nРазмер выборки: {sizes[i]}", fontsize=10)
 
     plt.legend(fontsize=10, loc=1)
-    plt.savefig(Path("images/poisson.png"))
+    plt.savefig(Path("lab1-4/images/histogram/poisson.png"))
     # plt.show()
 
 
@@ -146,7 +146,7 @@ def uniform_distr_graphics(
         plt.title(f"\nРазмер выборки: {sizes[i]}", fontsize=10)
 
     plt.legend(fontsize=10, loc=1)
-    plt.savefig(Path("images/uniform.png"))
+    plt.savefig(Path("lab1-4/images/histogram/uniform.png"))
     # plt.show()
 
 
