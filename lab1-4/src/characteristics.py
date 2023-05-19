@@ -109,7 +109,7 @@ def get_characteristics(generator, sample_size: tuple):
     return characteristics
 
 
-def lab2() -> dict[dict]:
+def characteristics() -> dict[dict]:
     sample_size = (10, 100, 1000)
     chars = dict()
     print("Processing...")
@@ -140,4 +140,4 @@ def lab2() -> dict[dict]:
 
 
 if __name__ == "__main__":
-    pprint.pprint(lab2())
+    pprint.pprint(characteristics())
