@@ -4,11 +4,12 @@
 
 \documentclass[12pt]{article}
 
-\usepackage{graphicx} % Required for the inclusion of images
+\usepackage{graphicx} % Required for the inclusion of mages
 \usepackage[square,sort,comma,numbers]{natbib}
 \usepackage{amsmath} % Required for some math elements 
 \usepackage{import}
 \usepackage[section]{placeins}
+\usepackage{subfiles}
 
 \usepackage{cmap}
 \usepackage[T2A]{fontenc}
@@ -44,7 +45,7 @@
 %	DOCUMENT INFORMATION
 %----------------------------------------------------------------------------------------
 \begin{document}
-\import{../}{titlepage.tex}
+\subfile{titlepage.tex}
 
 \tableofcontents
 \clearpage
@@ -79,7 +80,7 @@
 
 
 \section{Теория}
-\import{../}{theory.tex}
+\subfile{theory.tex}
 
 
 
@@ -93,32 +94,32 @@ matplotlib
 
 \begin{figure}[!hbt]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/histogram/normal.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/histogram/normal.png}
   \centering
       \caption{Нормальное распределение}
 \end{figure}
 
 \begin{figure}[!hbt]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/histogram/cauchy.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/histogram/cauchy.png}
   \caption{Распределение Коши}
 \end{figure}
 
 \begin{figure}[!hbt]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/histogram/laplace.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/histogram/laplace.png}
   \caption{Распределение Лапласа}
 \end{figure}
 
 \begin{figure}[!hbt]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/histogram/poisson.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/histogram/poisson.png}
   \caption{Распределение Пуассона}
 \end{figure}
 
 \begin{figure}[!hbt]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/histogram/uniform.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/histogram/uniform.png}
   \caption{Равномерное распределение}
 \end{figure}
 
@@ -317,31 +318,31 @@ $\hat{E}(z)$ & $ 0.0 $ & $ 0.0 $ & $0.00$ & $0.0$ & $0.0$ \\\hline
 \subsection{Боксплот Тьюки}
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.4\paperwidth ]{images/boxplots/Normal.png}
+  \includegraphics[width=0.4\paperwidth ]{../images/boxplots/Normal.png}
   \caption{Нормальное распределение}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.4\paperwidth ]{images/boxplots/Cauchy.png}
+  \includegraphics[width=0.4\paperwidth ]{../images/boxplots/Cauchy.png}
   \caption{Распределение Коши}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.4\paperwidth ]{images/boxplots/Laplace.png}
+  \includegraphics[width=0.4\paperwidth ]{../images/boxplots/Laplace.png}
   \caption{Распределение Лапласа}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.4\paperwidth ]{images/boxplots/Poisson.png}
+  \includegraphics[width=0.4\paperwidth ]{../images/boxplots/Poisson.png}
   \caption{Распределение Пуассона}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.4\paperwidth ]{images/boxplots/Uniform.png}
+  \includegraphics[width=0.4\paperwidth ]{../images/boxplots/Uniform.png}
   \caption{Равномерное распределение}
 \end{figure}
 
@@ -391,31 +392,31 @@ $\hat{E}(z)$ & $ 0.0 $ & $ 0.0 $ & $0.00$ & $0.0$ & $0.0$ \\\hline
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/edf/Normal.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/edf/Normal.png}
   \caption{Нормальное распределение}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/edf/Cauchy.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/edf/Cauchy.png}
   \caption{Распределение Коши}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/edf/Laplace.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/edf/Laplace.png}
   \caption{Распределение Лапласа}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/edf/Poisson.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/edf/Poisson.png}
   \caption{Распределение Пуассона}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/edf/Uniform.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/edf/Uniform.png}
   \caption{Равномерное распределение}
 \end{figure}
 
@@ -423,91 +424,91 @@ $\hat{E}(z)$ & $ 0.0 $ & $ 0.0 $ & $0.00$ & $0.0$ & $0.0$ \\\hline
 \subsection{Ядерные оценки}
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Normal_20.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Normal_20.png}
   \caption{Нормальное распределение, n = 20}
 \end{figure}
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Normal_60.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Normal_60.png}
   \caption{Нормальное распределение, n = 60}
 \end{figure}
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Normal_100.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Normal_100.png}
   \caption{Равномерное распределение, n = 100}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Cauchy_20.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Cauchy_20.png}
   \caption{Распределение Коши, n = 20}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Cauchy_60.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Cauchy_60.png}
   \caption{Распределение Коши, n = 60}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Cauchy_100.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Cauchy_100.png}
   \caption{Распределение Коши, n = 100}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Laplace_20.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Laplace_20.png}
   \caption{Распределение Лапласа, n = 20}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Laplace_60.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Laplace_60.png}
   \caption{Распределение Лапласа, n = 60}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Laplace_100.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Laplace_100.png}
   \caption{Распределение Лапласа, n = 100}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Poisson_20.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Poisson_20.png}
   \caption{Распределение Пуассона, n = 20}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Poisson_60.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Poisson_60.png}
   \caption{Распределение Пуассона, n = 60}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Poisson_100.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Poisson_100.png}
   \caption{Распределение Пуассона, n = 100}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Uniform_20.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Uniform_20.png}
   \caption{Равномерное распределение, n = 20}
 \end{figure}
 
 \begin{figure}
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Uniform_60.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Uniform_60.png}
   \caption{Равномерное распределение, n = 60}
 \end{figure}
 
 \begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.8\paperwidth ]{images/kde/Uniform_100.png}
+  \includegraphics[width=0.8\paperwidth ]{../images/kde/Uniform_100.png}
   \caption{Равномерное распределение, n = 100}
 \end{figure}
 
