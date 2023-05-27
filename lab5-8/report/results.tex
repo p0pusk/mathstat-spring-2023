@@ -174,16 +174,33 @@
 \subsubsection{Выборка с возмущениями}
 \begin{enumerate}
 	\item{Критерий наименьших квадратов:}
-	$\hat{a}^\approx 2.22$, $\hat{b}^\approx 0.44$, $dist = 201.38$
+	$\hat{a}^\prime \approx 2.22$, $\hat{b}^\prime \approx 0.44$, $dist = 201.38$
 	\item{Критерий наименьших модулей:}
-	$\hat{a}^\approx 1.99$, $\hat{b}^\approx 1.82$, $dist = 245.82$
+	$\hat{a}^\prime \approx 1.99$, $\hat{b}^\prime \approx 1.82$, $dist = 245.82$
 \end{enumerate}
-\begin{figure}[ht]
+\begin{figure}
 	\centering
 	\includegraphics[width = 10cm, height = 8cm]{../images/regression/6_2.png}
 	\caption{Выборка с возмущениями}
 	\label{w_pert}
 \end{figure}
+
+\FloatBarrier
+\begin{table}
+	\centering
+	\begin{tabular}{| c | c | c | c | c | c | c |}
+
+		\hline
+		МНМ & $\hat{a}$ &  $\hat{a}^{\prime}$ & $\hat{b}$ & $\hat{b}^{\prime}$ &  $|\frac{\hat{a} - \hat{a}^{\prime}}{\hat{a}}|$ & $|\frac{\hat{b} - \hat{b}^{\prime}}{\hat{b}}|$ \\ \hline
+		& 2.01 & 1.99 & 2.18 & 1.82 & $|\frac{2.01 - 1.99}{2.01}| \approx 0.010$  & $|\frac{2.18 - 1.82}{2.18}| \approx 0.165$ \\ \hline
+		&  &  &  & & &  \\ \hline
+		МНК & $\hat{a}$ &  $\hat{a}^{\prime}$ & $\hat{b}$ & $\hat{b}^{\prime}$ &  $|\frac{\hat{a} - \hat{a}^{\prime}}{\hat{a}}|$ & $|\frac{\hat{b} - \hat{b}^{\prime}}{\hat{b}}|$ \\ \hline
+		& 1.83 & 2.22 & 1.99 & 0.44 & $|\frac{1.83 - 2.22}{1.83}| \approx 0.213$  & $|\frac{1.99 - 0.44}{1.99}| \approx 0.779$  \\ \hline
+
+	\end{tabular}
+	\caption{Оценка изменения параметров $a$ и $b$ при наличии возмущений}
+	\label{tab:relative_deviation}
+\end{table}
 
 
 \FloatBarrier
@@ -267,7 +284,7 @@ $\hat{\mu} \approx -0.23, \hat{\sigma} \approx 1.03$
 \subsection{Доверительные интервалы для параметров нормального распределения}
 \begin{figure}[ht]
 	\centering
-	\includegraphics[width = 18cm, height = 6cm]{../images/interval/8_1.png}
+	\includegraphics[width=\textwidth]{../images/interval/8_1.png}
 	\caption{Гистограммы нормальных распределений и доверительные интервалы их параметров}
 	\label{w_pert1}
 \end{figure}
