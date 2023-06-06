@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx} % Required for the inclusion of images
+\usepackage[square,sort,comma,numbers]{natbib}
+\usepackage{amsmath} % Required for some math elements 
+\usepackage{import}
+\usepackage{amssymb}
+\usepackage{subfiles}
+\usepackage{algpseudocode}
+
+\usepackage[section]{placeins}
+
+\usepackage{cmap}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8x]{inputenc}
+\usepackage[english, russian]{babel}
+\usepackage[a4paper,left=15mm,right=15mm,top=30mm,bottom=20mm]{geometry}
+
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{adjustbox}
+
+\usepackage{listings}
+\lstset{language=R, basicstyle=\small, extendedchars=\true, breaklines=true, breakatwhitespace=true} 
+
+\hypersetup{pdfstartview=FitH, linkcolor=black, urlcolor=black, citecolor=black, colorlinks=true}
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+\renewcommand{\labelenumi}{\arabic{enumi}.}
+
+\newcommand{\bm}[1]{\boldsymbol{#1}}
+\newcommand{\RomanNumeralCaps}[1]
+{\MakeUppercase{\romannumeral #1}}
+
+\addto\captionsrussian{\def\refname{Литература}}
+
+\begin{document}
+\subfile{titlepage.tex}
+\newpage
+
+\tableofcontents
+\newpage
+
+\listoffigures
+\newpage
+
+\subfile{problem_statement.tex}
+\subfile{theory.tex}
+\subfile{results.tex}
+\subfile{discussion.tex}
+\subfile{bibliography.tex}
+
+\end{document}
